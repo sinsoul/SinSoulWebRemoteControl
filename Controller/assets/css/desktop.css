@@ -1,0 +1,499 @@
+@charset "utf-8";
+/*导入重置样式*/
+@import url("reset.css");
+/*页面基础样式*/
+html{
+	overflow:hidden 
+	}
+body {
+	font-size: 12px;
+ 	font-family: Tahoma, Geneva, sans-serif;
+	margin:0;
+	padding:0;
+	overflow:hidden
+}
+a {
+	font-size: 12px;
+}
+a:link {
+	text-decoration: none;
+	color:#FFF;
+}
+a:visited {
+	text-decoration: none;
+	color:#FFF;
+}
+a:hover {
+	text-decoration: none;
+	color:#FFF;
+}
+a:active {
+	text-decoration: none;
+	color:#FFF;
+}
+.corner {/*只在支持css3的高级浏览器起作用*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 3px 6px #666;
+	-webkit-box-shadow:1px 3px 6px #666;
+	box-shadow:1px 3px 6px #666;
+}
+.loading {
+	background:url(../img/ui/loading.gif) no-repeat center center
+}
+/*界面布局样式*/
+.powered_by {
+	width:160px;
+	height:25px;
+	line-height:25px;
+	background:url(../img/ui/powered-by.png) no-repeat left center;
+	color:#CCC;
+	text-indent:26px;
+	display:block;
+	outline:none;
+	position:absolute;
+	right:20px;
+	bottom:60px;
+}
+/*桌面导航按钮*/
+#navBar{
+	width:140px;
+	height:32px;
+	line-height:32px;
+	position:absolute;
+	left:50%;
+	margin-left:-100px;
+	top:0px;
+	background:url(../img/ui/navBg0.png) no-repeat center center;
+	text-align:center;
+	z-index:99;
+	}
+#navBar a{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background:url(../img/ui/navbg.png) no-repeat left top;
+	margin:4px 3px 0 0;
+	outline:none
+	}
+ 
+#navBar a:hover{
+	background-position: -48px top;
+	}
+#navBar a.currTab{
+	background-position:-24px top;
+	}	
+/*任务栏样式*/
+#taskBarWrap{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	background: url(../img/ui/bg_task_b.png) repeat-x left bottom;
+	z-index:60;
+	}
+#taskBar {
+	width:100%;
+	height:40px;
+	line-height:40px;
+	float:right;
+}
+#leftBtn{
+	width:100px;
+	height:40px;
+	float:left;
+	display:none;
+	}
+#rightBtn{
+	width:100px;
+	height:40px;
+	float:right;
+	display:none;
+	}	
+#leftBtn a,#rightBtn a{
+	display:block;
+    width:100px;
+    height:40px;
+    outline:none;
+    background-image:url(../img/ui/lr_btn.png);
+    background-repeat:no-repeat;
+}	
+#leftBtn a{ background-position:left top;}
+#rightBtn a{ background-position:right top;}
+#leftBtn a:hover{ background-position:left bottom}
+#rightBtn a:hover{ background-position:right bottom}
+
+#task_lb_wrap{
+	height:40px;
+	line-height:40px;
+	overflow:hidden;
+	position:relative;
+	}
+#task_lb {
+	width:auto;
+	height:auto;
+	position:absolute;
+	top:0;
+	right:0;
+}
+#task_lb a {
+	display:inline-block;
+	outline:none;
+	width:100px;
+	height:40px;
+	background-image:url(../img/ui/taskHdBtn.png);
+	background-repeat:no-repeat;
+	text-align:center;
+	line-height:40px;
+	float:right
+}
+#task_lb .defaultTab {
+	background-position:right top;
+	color:#ccc
+}
+#task_lb .defaultTab:hover {
+	background-position:right bottom;
+}
+#task_lb .selectTab {
+	background-position:left top;
+	color:#FFF
+}
+#task_lb .selectTab:hover {
+	background-position:left bottom
+}
+
+#shizhong_btn {
+	background:url(../img/ui/timer.png) no-repeat center center
+
+}
+#weather_btn {
+	background:url(../img/ui/wheather.png) no-repeat center center
+
+}
+#sound_btn {
+	background:url(images/sound_open.png) no-repeat center center
+}
+#showZm_btn {
+	background:url(../img/ui/show-desktop.png) no-repeat center center
+
+}
+#them_btn{
+	background:url(../img/ui/skin.png) no-repeat center center
+
+	}
+/*侧边浮动栏*/
+#lr_bar{
+	width:73px;
+	height:auto;
+	position:absolute;
+	left:0;
+	top:30px;
+	background:url(../img/ui/dock_top.png) repeat-y left top;
+	z-index:90;
+	-moz-box-shadow: 0px 3px 15px #444;
+	-webkit-box-shadow: 0px 3px 15px #444;
+	box-shadow:0px 3px 15px #444;
+	padding-top:5px;}
+
+/*开始按钮样式*/
+#start_block {
+	width:73px;
+	height:56px;
+	position:absolute;
+	left:0;
+	bottom:-56px;
+	background:url(../img/ui/dock_b.png) no-repeat left bottom;
+	-moz-box-shadow: 0px 5px 15px #444;
+	-webkit-box-shadow: 0px 5px 15px #444;
+	box-shadow:0px 5px 15px #444;
+}
+#start_btn {
+	display:block;
+	width:48px;
+	height:48px;
+	background:url(../img/ui/start-btn.png) no-repeat center bottom;
+	margin:4px auto 0 auto;
+	outline:none;
+	z-index:501;
+	cursor:pointer;
+}
+#start_btn:hover {
+	background-position:center top
+}
+/*开始菜单样式*/
+#start_item {
+	width:180px;
+	height:auto;
+	padding:5px 0;
+	background: url(../img/ui/start_item_bg.png) repeat;
+	position:absolute;
+	z-index:500;
+	left:75px;
+	bottom:0px;
+	display:none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 2px 2px 5px #444;
+	-webkit-box-shadow: 2px 2px 5px #444;
+	box-shadow:2px 2px 5px #444;
+}
+#start_item .item {
+	width:100%;
+	height:auto;
+	border-top:1px solid #999
+}
+#start_item .item li {
+	width:98%;
+	height:24px;
+	overflow:hidden;
+	zoom:-1;
+	padding:6px 0;
+	line-height:24px;
+	margin:0 auto;
+	color:#FFF;
+}
+#start_item .item li:hover {
+	background:url(../img/ui/start_item_over.png) repeat-x left bottom;
+	cursor:pointer
+}
+#start_item .item li span {
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background-image:url(../img/ui/start_itembtn.png);
+	background-repeat:no-repeat;
+	margin:0 10px;
+	float:left;
+}
+#start_item .item li b {
+	width:10px;
+	height:24px;
+	background:url(../img/ui/item-child.png) no-repeat center center;
+	display:inline-block;
+	float:right;
+	margin-right:10px;
+}
+#start_item .sitting_btn {
+	background-position:left -140px;
+}
+#start_item .help_btn {
+	background-position:left -44px;
+}
+#start_item .about_btn {
+	background-position:left -164px;
+}
+#start_item .logout_btn {
+	background-position:left -20px;
+}
+#start_item .admin {
+	border-bottom:1px solid #444;
+	padding:5px 0;
+	border-top:none;
+}
+#start_item .item li .adminImg {
+	border:1px solid #E0E0E0;
+	background-position:left -92px;
+	background-color:#FFF;
+}
+/*默认小工具*/
+#default_tools{
+	width:71px;
+	height:auto;
+	overflow:hidden;
+	zoom:-1;
+	padding:5px 0;
+	border-top:1px solid #555;
+	margin:0 auto;
+	}
+#default_tools span{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	margin:0 0 0 3px;
+	cursor:pointer;
+	float:left;
+	}	
+/*默认应用程序*/	
+#default_app{
+	width:73px;
+	height:auto;
+	padding:5px 0;
+ 	position:relative;
+	}
+#default_app li{
+	width:48px;
+	height:48px;
+	overflow:hidden;
+	margin:3px auto;
+	padding:6px;
+	}
+#default_app li .text{
+	display:none;
+	}	
+#default_app li img{
+	width:48px;
+	height:48px;
+	cursor:pointer;
+	outline:none;
+	-moz-user-select:none;
+	}
+#default_app .btnOver{
+	background:url(../img/ui/default_appbtn_bg.png) no-repeat center center
+
+	}	
+/*重写右键菜单样式*/
+.smart_menu_box .smart_menu_a{ color:#333}
+.smart_menu_box .smart_menu_li_separate{border-bottom:1px solid #d6d5d5;}
+/*窗口样式*/
+.windows {
+	width:340px;
+	height:300px;
+	position:absolute;
+	display:none;
+	background-color:#CCC;
+	border:1px solid #999;
+}
+.win_title {
+	width:100%;
+	height:26px;
+	line-height:26px;
+	background:#E0E0E0 url(../img/ui/titlebar_bg_cur.png) repeat-x left center;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.win_title b {
+	color:#333;
+	margin-left:10px;
+	outline:none;
+	-moz-user-select:none;
+	float:left
+}
+.win_title .win_btnblock {
+	width:auto;
+	padding:0 5px;
+	float:right;
+	height:17px;
+	margin:4px 3px 0 0;
+}
+.win_title .win_btnblock a {
+	display:inline-block;
+	width:26px;
+	height:17px;
+	background-image:url(../img/ui/windowBtn.png);
+	background-repeat:no-repeat;
+	float:left;
+	margin:0 1px;
+	outline:none;
+}
+.winMaximize {
+	background-position:right bottom;
+}
+.winMaximize:hover {
+	background-position:right top;
+}
+.winHyimize {
+	background-position:-26px bottom;
+}
+.winHyimize:hover {
+	background-position:-26px top;
+}
+.winClose {
+	background-position:-52px top;
+}
+.winClose:hover {
+	background-position:-52px bottom;
+}
+.winMinimize {
+	background-position:left bottom;
+}
+.winMinimize:hover {
+	background-position:left top;
+}
+.winframe {
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+	display:none
+}
+#wallpapers{
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:-100;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	}
+/*桌面图标*/	
+#desktopPanel{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:70;
+	}
+#desktopInnerPanel{
+	position:relative;
+	background:url(../img/ui/bg.png) repeat;
+	}	
+.deskIcon {
+	width:100%;
+	height:auto;
+	position:relative;
+	float:left;
+}
+.desktop_icon {
+	width:86px;
+	height:88px;
+	cursor:pointer;
+	margin-left:-1000px;
+	text-align:center;
+}
+.desktop_icon span {
+	display:block;
+}
+.desktop_icon .icon {
+	width:50px;
+	height:50px;
+	margin:5px auto;
+	outline:none;
+	-moz-user-select:none;
+}
+.desktop_icon .icon img{
+	width:50px;
+	height:50px;
+	}
+.desktop_icon .text {
+	display:inline-block;
+	width:auto;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	color:#fff;
+	background:url(../img/ui/iconTextbg.png) no-repeat left center;
+	position:relative;
+	padding-left:10px;
+	margin-right:10px;
+	outline:none;
+	-moz-user-select:none;
+}
+.desktop_icon s{
+	display:inline-block;
+	width:10px;
+	height:22px;
+	position:absolute;
+	right:-10px;
+	top:0;
+	background:url(../img/ui/iconTextbg_right.png) left center no-repeat;
+	}
+.desktop_icon_over {
+	background:url(../img/ui/icon_over.png) no-repeat center center;
+}

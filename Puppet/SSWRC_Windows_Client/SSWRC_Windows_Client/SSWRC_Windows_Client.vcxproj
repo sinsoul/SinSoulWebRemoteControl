@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0F04AEC-00EB-441D-B61B-931A7C0C0D18}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SSWRC_Windows_Client</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;;C:\Program Files\Parasoft\C++test for Visual Studio\9.2\engine\runtime\include;G:\Microsoft DirectX SDK (June 2010)\Include;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;G:\Microsoft DirectX SDK (June 2010)\Lib\x86;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;;C:\Program Files\Parasoft\C++test for Visual Studio\9.2\engine\runtime\include;G:\Microsoft DirectX SDK (June 2010)\Include;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;G:\Microsoft DirectX SDK (June 2010)\Lib\x86;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CommandHandler.cpp" />
+    <ClCompile Include="DatabaseSystemDevelopment_GUI.cpp" />
+    <ClCompile Include="DirectShowVideoCapture.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="HttpMessenger.cpp" />
+    <ClCompile Include="JsonCppLib\json_reader.cpp" />
+    <ClCompile Include="JsonCppLib\json_value.cpp" />
+    <ClCompile Include="JsonCppLib\json_writer.cpp" />
+    <ClCompile Include="ScreenCapture.cpp" />
+    <ClCompile Include="ScreenControl.cpp" />
+    <ClCompile Include="SystemTraySDK.cpp" />
+    <ClCompile Include="TaskManager.cpp" />
+    <ClCompile Include="Transcoding.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommandHandler.h" />
+    <ClInclude Include="DatabaseSystemDevelopment_GUI.h" />
+    <ClInclude Include="DirectShowVideoCapture.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="HttpMessenger.h" />
+    <ClInclude Include="JsonCppLib\assertions.h" />
+    <ClInclude Include="JsonCppLib\autolink.h" />
+    <ClInclude Include="JsonCppLib\config.h" />
+    <ClInclude Include="JsonCppLib\features.h" />
+    <ClInclude Include="JsonCppLib\forwards.h" />
+    <ClInclude Include="JsonCppLib\json.h" />
+    <ClInclude Include="JsonCppLib\json_batchallocator.h" />
+    <ClInclude Include="JsonCppLib\json_tool.h" />
+    <ClInclude Include="JsonCppLib\reader.h" />
+    <ClInclude Include="JsonCppLib\value.h" />
+    <ClInclude Include="JsonCppLib\writer.h" />
+    <ClInclude Include="MyStdAfx.h" />
+    <ClInclude Include="Qedit.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScreenCapture.h" />
+    <ClInclude Include="ScreenControl.h" />
+    <ClInclude Include="SystemTraySDK.h" />
+    <ClInclude Include="TaskManager.h" />
+    <ClInclude Include="Transcoding.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JsonCppLib\json_internalarray.inl" />
+    <None Include="JsonCppLib\json_internalmap.inl" />
+    <None Include="JsonCppLib\json_valueiterator.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DatabaseSystemDevelopment_GUI1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

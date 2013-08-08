@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\JsonCppLib">
+      <UniqueIdentifier>{7d757c0b-aeb2-4187-b1c2-3a8e06817ae6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommandHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseSystemDevelopment_GUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectShowVideoCapture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpMessenger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenCapture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemTraySDK.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Transcoding.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonCppLib\json_reader.cpp">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonCppLib\json_value.cpp">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonCppLib\json_writer.cpp">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommandHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSystemDevelopment_GUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectShowVideoCapture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpMessenger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyStdAfx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Qedit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCapture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemTraySDK.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Transcoding.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\assertions.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\autolink.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\config.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\features.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\forwards.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\json.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\json_batchallocator.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\json_tool.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\reader.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\value.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonCppLib\writer.h">
+      <Filter>源文件\JsonCppLib</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JsonCppLib\json_internalarray.inl">
+      <Filter>源文件\JsonCppLib</Filter>
+    </None>
+    <None Include="JsonCppLib\json_internalmap.inl">
+      <Filter>源文件\JsonCppLib</Filter>
+    </None>
+    <None Include="JsonCppLib\json_valueiterator.inl">
+      <Filter>源文件\JsonCppLib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DatabaseSystemDevelopment_GUI1.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

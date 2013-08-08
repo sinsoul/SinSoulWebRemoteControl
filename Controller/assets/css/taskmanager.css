@@ -1,0 +1,42 @@
+.task-manager{position:absolute;left:0;top:0}
+.task-manager .ai-list tr td{cursor:pointer}
+
+.task-manager .ai-list i.icon-playing{float:left;margin-top:8px;display:none}
+.task-manager .ai-list tr td.name div.text{float:left}
+
+.ai-list{width:800px;table-layout: fixed;border:0}
+.ai-list tr td{padding:0 5px;width:800px;}
+
+.ai-list thead tr td{background:url("../img/ui/repeat_x.png") repeat-x 0 -42px;border-right:1px solid #CCC;line-height:20px;height:23px}
+.ai-list thead tr td.clickable{cursor:pointer}
+.ai-list thead tr div.column-title{width:100%;height:23px;position:relative;line-height:23px}
+
+.ai-list thead tr td.select{text-align:left;width:16px}
+.ai-list tbody tr td.select{text-align:left;width:16px}
+
+.ai-list thead tr td.name{text-align:left;width:180px}
+.ai-list tbody tr td.name{text-align:left;width:180px}
+
+.ai-list thead tr td.pid{text-align:left;width:70px}
+.ai-list tbody tr td.pid{text-align:left;width:70px}
+
+.ai-list thead tr td.user{text-align:left;width:160px}
+.ai-list tbody tr td.user{text-align:left;width:160px}
+
+.ai-list thead tr td.mem{text-align:left;width:80px}
+.ai-list tbody tr td.mem{text-align:left;width:80px}
+
+.ai-list thead tr td.path{text-align:left;width:202px}
+.ai-list tbody tr td.path{text-align:left;width:200px}
+
+.ai-list tbody tr{background:#f1f1f1}
+.ai-list tbody tr:nth-child(even){background:#ebecee}
+.ai-list tbody tr:hover{background:#FFF}
+.ai-list tbody tr td{line-height:34px;border-bottom:1px solid #ddd}
+.ai-list tbody td div.text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-ms-text-overflow:ellipsis}
+.ai-list .select{width:16px;text-align:right;padding-left:5px}
+.ai-list .select div{vertical-align:middle;margin-bottom:2px}
+
+.checkbox,.checkbox_all{background:url("../img/ui/tools.png") no-repeat -349px -110px;cursor:pointer;display:inline-block;height:16px;width:16px}
+.checkbox.disabled,.checkbox_all.disabled{background-position:-349px -136px;cursor:default}
+.checkbox.checked,.checkbox_all.checked{background-position:-349px -162px}
